@@ -1,0 +1,84 @@
+@import "styles/common.scss";
+
+.Todo {
+  // @include sampleFlex(flex-start, flex-start, column);
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.TodoHeader {
+  form {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+  }
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+  }
+  button {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+
+.TodoMain {
+  padding: 10px 0;
+  overflow: auto;
+  height: 90%;
+}
+
+.TodoItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+
+  form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid black;
+      outline: none;
+    }
+  }
+
+  .CheckCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 16px;
+    border: 1px solid gray;
+    cursor: pointer;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    fill: gray;
+    cursor: pointer;
+
+    &:hover {
+      fill: black;
+    }
+  }
+
+  .Text {
+    flex: 1;
+  }
+}

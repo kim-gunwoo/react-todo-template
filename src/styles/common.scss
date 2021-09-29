@@ -1,0 +1,13 @@
+$green: #479f78;
+$yellow: #fae100;
+
+@mixin sampleFlex(
+  $justify: flex-start,
+  $align: flex-start,
+  $flexDirection: row
+) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $flexDirection;
+}
